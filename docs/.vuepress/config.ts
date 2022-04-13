@@ -73,7 +73,7 @@ export default defineUserConfig<GungnirThemeOptions>({
     // personal information
     personalInfo: {
       name: 'Shaul',
-      avatar: '/img/avatar.jpeg',
+      avatar: '/img/about-avatar.png',
       description: "Shaul's Blog",
       sns: {
         github: 'shaul-xu',
