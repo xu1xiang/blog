@@ -1,0 +1,1 @@
+const t={key:"v-f0388862",path:"/links/",title:"Links",lang:"en-US",frontmatter:{layout:"Links",title:"Links",links:[{title:"\u778E\u6298\u817E",items:[{sitename:"ME?",url:"https://github.com/shaul-xu",img:"/img/links/github.png",desc:"My Github"}]}]},excerpt:"",headers:[],git:{updatedTime:1650110432e3},filePathRelative:"links/README.md"};export{t as data};
