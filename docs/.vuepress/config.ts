@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 export default defineUserConfig<GungnirThemeOptions>({
   dest: 'build',
-  base: process.env.IS_Github === 'true' ? '/blog/' : '/',
+  base: process.env.BASE === 'undifined' ? '/' : `/${process.env.BASE}/`,
   head: [
     [
       'link',

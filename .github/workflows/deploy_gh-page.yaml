@@ -2,8 +2,8 @@ name: build and deploy github-pages
 
 on:
   push:
-    branchs:
-      - main
+    branches:
+      - release
 
 jobs:
   build-and-deploy:
@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies && Build
         env:
-          IS_Github: true
+          BASE: 'blog'
         run: yarn install && yarn build
 
       - name: Deploy
