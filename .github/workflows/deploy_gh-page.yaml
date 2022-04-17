@@ -22,14 +22,15 @@ jobs:
       run: yarn install
 
   deploy_github_pages:
-    name: build
-    needs: checkout_code_and_install_dependencies
-    env:
-      BASE: 'blog'
-    run: yarn build
+    steps:
+      name: build
+      needs: checkout_code_and_install_dependencies
+      env:
+        BASE: 'blog'
+      run: yarn build
 
-    name: Deploy to Github Pages
-    uses: peaceiris/actions-gh-pages@v3
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./build
+      name: Deploy to Github Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
