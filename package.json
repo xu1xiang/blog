@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vuepress dev docs --clean-cache",
-    "build": "vuepress build docs --clean-cache"
+    "build": "vuepress build docs --clean-cache",
+    "release": "git push origin HEAD:release"
   },
   "prettier": {
     "singleQuote": true,
