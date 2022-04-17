@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      name: Checkout
+    - name: Checkout
       uses: actions/checkout@v3
 
       name: Setup Node.js environment
@@ -18,18 +18,18 @@ jobs:
       with:
         node-version: 16
 
-      name: Install dependencies
+    - name: Install dependencies
       run: yarn install
 
   deploy_github_pages:
     steps:
-      name: build
+    - name: build
       needs: checkout_code_and_install_dependencies
       env:
         BASE: 'blog'
       run: yarn build
 
-      name: Deploy to Github Pages
+    - name: Deploy to Github Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
