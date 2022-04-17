@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 export default defineUserConfig<GungnirThemeOptions>({
   dest: 'build',
-  base: process.env.BASE === 'undifined' ? '/' : `/${process.env.BASE}/`,
+  base: process.env.BASE === 'undefined' ? '/' : `/${process.env.BASE}/`,
   head: [
     [
       'link',
