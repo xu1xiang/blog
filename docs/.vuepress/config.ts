@@ -4,15 +4,10 @@ import { i18n } from 'vuepress-theme-gungnir'
 import { navbar, sidebar } from './configs'
 
 const isProd = process.env.NODE_ENV === 'production'
-console.log('----------------')
-console.log(
-  process.env.BASE,
-  process.env.BASE === 'undefined',
-  typeof process.env.BASE
-)
+
 export default defineUserConfig<GungnirThemeOptions>({
   dest: 'build',
-  base: process.env.BASE === 'undefined' ? '/' : `/${process.env.BASE}/`,
+  base: process.env.BASE ? `/${process.env.BASE}/` : '/',
   head: [
     [
       'link',
