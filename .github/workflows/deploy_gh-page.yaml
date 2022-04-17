@@ -1,4 +1,4 @@
-name: build and deploy github-pages
+name: build and deploy to github-pages
 
 on:
   push:
@@ -6,25 +6,30 @@ on:
       - release
 
 jobs:
-  build-and-deploy:
+  checkout_code_and_install_dependencies:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup Node.js environment
+      name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
           node-version: 16
 
-      - name: Install dependencies && Build
-        env:
-          BASE: 'blog'
-        run: yarn install && yarn build
+      name: Install dependencies
+        run: yarn install
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+  deploy_github_pages:
+    name: build
+    needs: checkout_code_and_install_dependencies
+    env:
+      BASE: 'blog'
+    run: yarn build
+
+    name: Deploy to Github Pages
+    uses: peaceiris/actions-gh-pages@v3
+    with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      publish_dir: ./build
