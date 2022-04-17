@@ -1,4 +1,4 @@
-name: Deploy to Github Pages
+name: Deploy to Vercel
 
 on:
   push:
@@ -21,12 +21,14 @@ jobs:
           node-version: 16
 
       - name: Install dependencies && Build
-        env:
-          BASE: 'blog'
         run: yarn install && yarn build
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: amondnet/vercel-action@v20 #deploy
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+          github-token: ${{ secrets.GITHUB_TOKEN }} #Optional
+          vercel-args: '--prod' #Optional
+          vercel-org-id: ${{ secrets.ORG_ID}} #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
+          working-directory: ./
