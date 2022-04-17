@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies && Build
         env:
-          IS_Github: true
+          BASE: 'blog'
         run: yarn install && yarn build
 
       - name: Deploy
