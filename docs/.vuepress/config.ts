@@ -4,10 +4,11 @@ import { i18n } from 'vuepress-theme-gungnir'
 import { navbar, sidebar } from './configs'
 
 const isProd = process.env.NODE_ENV === 'production'
+const base = process.env.BASE ? `/${process.env.BASE}/` : '/'
 
 export default defineUserConfig<GungnirThemeOptions>({
   dest: 'build',
-  base: process.env.BASE ? `/${process.env.BASE}/` : '/',
+  base: base as `/${string}/`,
   head: [
     [
       'link',
@@ -15,7 +16,7 @@ export default defineUserConfig<GungnirThemeOptions>({
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: `/img/logo/favicon-16x16.png`,
+        href: `${base}img/logo/favicon-16x16.png`,
       },
     ],
     [
@@ -24,7 +25,7 @@ export default defineUserConfig<GungnirThemeOptions>({
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: `/img/logo/favicon-32x32.png`,
+        href: `${base}/img/logo/favicon-32x32.png`,
       },
     ],
     [
