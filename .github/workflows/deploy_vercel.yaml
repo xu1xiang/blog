@@ -1,4 +1,4 @@
-name: build and deploy github-pages
+name: deploy to vercel
 
 on:
   push:
