@@ -11,15 +11,15 @@ jobs:
 
     steps:
       name: Checkout
-        uses: actions/checkout@v3
+      uses: actions/checkout@v3
 
       name: Setup Node.js environment
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
 
       name: Install dependencies
-        run: yarn install
+      run: yarn install
 
   deploy_github_pages:
     name: build
