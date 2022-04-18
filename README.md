@@ -1,1 +1,1 @@
-[Vercel: shaul-blog.vercel.app](shaul-blog.vercel.app/)
+[Vercel: https://shaul-blog.vercel.app](https://shaul-blog.vercel.app/)
