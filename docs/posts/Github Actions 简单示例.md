@@ -80,4 +80,4 @@ jobs:
 
 ## 最后
 
-当 `release` 分支分支发生 `push` 事件时，可以在 `https://github.com/{repostory}/actions` 页面看到当前 `workflow` 已经被触发，待 `workflow` 成功运行完毕，访问 `https://{username}.github.io/blog` 即可看到部署后的页面。
+当 `release` 分支发生 `push` 事件时，可以在 `https://github.com/{repostory}/actions` 页面看到当前 `workflow` 已经被触发，待 `workflow` 成功运行完毕，访问 `https://{username}.github.io/blog` 即可看到部署后的页面。
