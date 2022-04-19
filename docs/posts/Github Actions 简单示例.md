@@ -5,7 +5,7 @@ subtitle: 使用 Github Actions 自动部署应用到 Github Pages
 author: Shaul
 date: 2022-04-18
 useHeaderImage: true
-headerImage: /img/in-post/2022-04-13/github-actions.jpeg
+headerImage: /img/in-post/2022-04-18/github-actions.jpeg
 headerMask: rgba(40, 57, 101, .4)
 tags:
   - Github Actions
