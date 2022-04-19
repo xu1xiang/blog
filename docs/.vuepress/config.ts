@@ -166,7 +166,7 @@ export default defineUserConfig<GungnirThemeOptions>({
       },
       ga: 'G-ZLWJGDQC5S',
       ba: 'eeefe762518116b8686f71979df2f0b4',
-      pwa: true,
+      pwa: false,
       // search: false, // use @vuepress/plugin-docsearch instead
     },
 
