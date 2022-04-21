@@ -15,13 +15,13 @@ tags:
 
 `Github Pages` 提供免费的静态托管服务，使用静态托管可以大大节省服务器和域名的费用（_白嫖使人快乐_）。
 
-本篇文章将介绍一下如何使用 `Github Actions` 将应用同时部署到 `Github Pages` 上。
+本篇文章将介绍一下如何使用 `Github Actions` 将应用部署到 `Github Pages` 上。
 
 ## 为什么选择 Github Actions ？
 
 首先 `Github Actions` 的功能非常强大，其 [Github Market](https://github.com/marketplace?category=&query=&type=actions&verification=) 还提供了大量的 `Action` 供开发者使用。而且由于应用的源代码本身就托管在 Github 上， `Github Actions` 可以非常方便的获取到应用的源代码。最最重要的是 `Github Actions` 也是免费的(_白嫖再次使人快乐_)。
 
-## 部署到流程：
+## 部署流程：
 
 ## Workflow 流程
 
