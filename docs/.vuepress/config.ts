@@ -32,7 +32,14 @@ export default defineUserConfig<GungnirThemeOptions>({
       'meta',
       {
         name: 'keywords',
-        content: "Shaul,Shaul's Blog,Shaul Blog",
+        content: "Shaul Xu,Shaul Xu's Blog,Shaul Xu Blog,Shaul Xu 的博客",
+      },
+    ],
+    [
+      'meta',
+      {
+        name: 'description',
+        content: "Shaul Xu's Blog,Shaul Xu Blog, Shaul Xu 的博客",
       },
     ],
     [
@@ -55,8 +62,8 @@ export default defineUserConfig<GungnirThemeOptions>({
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'Shaul',
-      description: 'Shaul Blog',
+      title: 'Shaul Xu Blog',
+      description: "Shaul Xu's Blog",
     },
   },
 
@@ -164,8 +171,8 @@ export default defineUserConfig<GungnirThemeOptions>({
       mdPlus: {
         all: true,
       },
-      ga: 'G-ZLWJGDQC5S',
-      ba: 'eeefe762518116b8686f71979df2f0b4',
+      // ga: 'G-ZLWJGDQC5S',
+      ba: 'f645355c45295e011faa1a65c2c0b86c',
       pwa: false,
       // search: false, // use @vuepress/plugin-docsearch instead
     },
