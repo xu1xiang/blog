@@ -185,7 +185,14 @@ export default defineUserConfig<GungnirThemeOptions>({
     `,
   },
 
-  plugins: [],
+  plugins: [
+    [
+      'sitemap2',
+      {
+        hostname: 'https://www.xuyx.site',
+      },
+    ],
+  ],
 
   markdown: {
     extractHeaders: {
