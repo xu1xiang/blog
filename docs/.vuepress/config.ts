@@ -72,7 +72,7 @@ export default defineUserConfig<GungnirThemeOptions>({
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'Shaul Xu Blog',
+      title: "Shaul Xu's Blog",
       description: "Shaul Xu's Blog",
     },
   },
