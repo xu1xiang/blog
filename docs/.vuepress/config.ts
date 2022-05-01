@@ -46,7 +46,7 @@ export default defineUserConfig<GungnirThemeOptions>({
       'meta',
       {
         name: 'baidu-site-verification',
-        content: 'code-ZU4gfKUMfB',
+        content: 'code-b3AXWsolty',
       },
     ],
     ['meta', { name: 'apple-mobile-web-app-title', content: "Shaul's Blog" }],
