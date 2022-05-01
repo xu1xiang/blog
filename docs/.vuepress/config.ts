@@ -49,6 +49,13 @@ export default defineUserConfig<GungnirThemeOptions>({
         content: 'code-b3AXWsolty',
       },
     ],
+    [
+      'meta',
+      {
+        name: 'google-site-verification',
+        content: 'aV2Di5uN-VKtK_bGNYGHx---yYqZRds6mSCvEZcFURU',
+      },
+    ],
     ['meta', { name: 'apple-mobile-web-app-title', content: "Shaul's Blog" }],
     [
       'meta',
