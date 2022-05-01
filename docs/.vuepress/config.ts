@@ -56,7 +56,10 @@ export default defineUserConfig<GungnirThemeOptions>({
         content: 'aV2Di5uN-VKtK_bGNYGHx---yYqZRds6mSCvEZcFURU',
       },
     ],
-    ['meta', { name: 'apple-mobile-web-app-title', content: "Shaul's Blog" }],
+    [
+      'meta',
+      { name: 'apple-mobile-web-app-title', content: "Shaul Xu's Blog" },
+    ],
     [
       'meta',
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black' },
@@ -87,9 +90,9 @@ export default defineUserConfig<GungnirThemeOptions>({
 
     // personal information
     personalInfo: {
-      name: 'Shaul',
+      name: 'Shaul Xu',
       avatar: '/img/about-avatar.png',
-      description: "Shaul's Blog",
+      description: "Shaul Xu's Blog",
       sns: {
         github: 'shaul-xu',
         email: 'xuyixiang18@gmail.com',
@@ -185,7 +188,7 @@ export default defineUserConfig<GungnirThemeOptions>({
     },
 
     footer: `
-      &copy; <a href="https://github.com/shaul-xu" target="_blank">Shaul</a> 2019-2022
+      &copy; <a href="https://github.com/shaul-xu" target="_blank">Shaul Xu</a> 2019-2022
       <br>
       Powered by <a href="https://v2.vuepress.vuejs.org" target="_blank">VuePress</a> &
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
