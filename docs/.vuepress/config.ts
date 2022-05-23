@@ -1,9 +1,8 @@
 import { defineUserConfig } from 'vuepress'
-import { viteBundler } from '@vuepress/bundler-vite'
-import { webpackBundler } from '@vuepress/bundler-webpack'
 import { gungnirTheme } from 'vuepress-theme-gungnir'
 import { i18n } from 'vuepress-theme-gungnir'
 import { navbar, sidebar } from './configs'
+import { viteBundler } from '@vuepress/bundler-vite'
 
 const isProd = process.env.NODE_ENV === 'production'
 const base = process.env.BASE ? `/${process.env.BASE}/` : '/'
@@ -79,10 +78,11 @@ export default defineUserConfig({
     },
   },
 
-  bundler:
-    process.env.DOCS_BUNDLER === 'webpack' ? webpackBundler() : viteBundler(),
+  bundler: viteBundler(),
 
   theme: gungnirTheme({
+    repo: 'Renovamen/vuepress-theme-gungnir',
+    docsDir: 'docs',
     hitokoto: 'https://v1.hitokoto.cn?c=i', // enable hitokoto (一言) or not?
 
     // personal information
@@ -191,6 +191,15 @@ export default defineUserConfig({
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
     `,
   }),
+
+  // plugins: [
+  //   [
+  //     'sitemap2',
+  //     {
+  //       hostname: 'https://www.xuyx.site',
+  //     },
+  //   ],
+  // ],
 
   markdown: {
     extractHeaders: {
