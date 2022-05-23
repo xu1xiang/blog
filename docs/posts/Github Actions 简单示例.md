@@ -2,7 +2,7 @@
 layout: Post
 title: Github Actions 部署前端应用
 subtitle: 使用 Github Actions 自动部署应用到 Github Pages
-author: Shaul
+author: xuyixiang
 date: 2022-04-18
 useHeaderImage: true
 headerImage: /img/in-post/2022-04-18/github-actions.jpeg

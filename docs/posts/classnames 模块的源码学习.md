@@ -2,7 +2,7 @@
 layout: Post
 title: classnames 模块的源码学习
 subtitle: 探索 classnames 模块的内部实现
-author: Shaul
+author: xuyixiang
 date: 2022-04-19
 useHeaderImage: true
 headerImage: /img/in-post/2022-04-19/classnames.png

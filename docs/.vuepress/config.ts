@@ -33,15 +33,24 @@ export default defineUserConfig({
     [
       'meta',
       {
+        name: 'author',
+        content: 'xuyixiang',
+      },
+    ],
+    [
+      'meta',
+      {
         name: 'keywords',
-        content: "Shaul Xu,Shaul Xu's Blog,Shaul Xu Blog,Shaul Xu 的博客",
+        content:
+          "xuyixiang,xuyixiang's blog,xuyixiang blog,xuyixiang 的博客,许逸翔的博客,许逸翔的blog,许逸翔's blog",
       },
     ],
     [
       'meta',
       {
         name: 'description',
-        content: "Shaul Xu's Blog,Shaul Xu Blog, Shaul Xu 的博客",
+        content:
+          "xuyixiang's blog,xuyixiang blog, xuyixiang 的博客,许逸翔的博客,许逸翔的blog,许逸翔's blog",
       },
     ],
     [
@@ -60,7 +69,7 @@ export default defineUserConfig({
     ],
     [
       'meta',
-      { name: 'apple-mobile-web-app-title', content: "Shaul Xu's Blog" },
+      { name: 'apple-mobile-web-app-title', content: "xuyixiang's blog" },
     ],
     [
       'meta',
@@ -74,8 +83,8 @@ export default defineUserConfig({
   locales: {
     '/': {
       lang: 'en-US',
-      title: "Shaul Xu's Blog",
-      description: "Shaul Xu's Blog",
+      title: "xuyixiang's blog",
+      description: "xuyixiang's blog",
     },
   },
 
@@ -88,11 +97,11 @@ export default defineUserConfig({
 
     // personal information
     personalInfo: {
-      name: 'Shaul Xu',
+      name: 'xuyixiang',
       avatar: '/img/about-avatar.png',
-      description: "Shaul Xu's Blog",
+      description: "xuyixiang's blog",
       sns: {
-        github: 'shaul-xu',
+        github: 'xu1xiang',
         email: 'xuyixiang18@gmail.com',
       },
     },
@@ -170,7 +179,7 @@ export default defineUserConfig({
       mermaid: true,
       chartjs: true,
       giscus: {
-        repo: 'shaul-xu/blog',
+        repo: 'xu1xiang/blog',
         repoId: 'MDEwOlJlcG9zaXRvcnkzOTc0ODYzMzk=',
         category: 'General',
         categoryId: 'DIC_kwDOF7EpA84COi_d',
@@ -186,7 +195,7 @@ export default defineUserConfig({
     },
 
     footer: `
-      &copy; <a href="https://github.com/shaul-xu" target="_blank">Shaul Xu</a> 2019-2022
+      &copy; <a href="https://github.com/xu1xiang" target="_blank">xuyixiang</a> 2019-2022
       <br>
       Powered by <a href="https://v2.vuepress.vuejs.org" target="_blank">VuePress</a> &
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
