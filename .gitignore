@@ -6,3 +6,5 @@ build
 /docs/.vuepress/.temp/
 /docs/.vuepress/dist/
 .vercel
+
+yarn-error.log

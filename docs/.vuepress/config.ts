@@ -1,12 +1,14 @@
 import { defineUserConfig } from 'vuepress'
-import type { GungnirThemeOptions } from 'vuepress-theme-gungnir'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { webpackBundler } from '@vuepress/bundler-webpack'
+import { gungnirTheme } from 'vuepress-theme-gungnir'
 import { i18n } from 'vuepress-theme-gungnir'
 import { navbar, sidebar } from './configs'
 
 const isProd = process.env.NODE_ENV === 'production'
 const base = process.env.BASE ? `/${process.env.BASE}/` : '/'
 
-export default defineUserConfig<GungnirThemeOptions>({
+export default defineUserConfig({
   dest: 'build',
   base: base as `/${string}/`,
   head: [
@@ -78,14 +80,9 @@ export default defineUserConfig<GungnirThemeOptions>({
   },
 
   bundler:
-    // specify bundler via environment variable
-    process.env.DOCS_BUNDLER ??
-    // use vite by default
-    '@vuepress/vite',
+    process.env.DOCS_BUNDLER === 'webpack' ? webpackBundler() : viteBundler(),
 
-  theme: 'vuepress-theme-gungnir',
-
-  themeConfig: {
+  theme: gungnirTheme({
     hitokoto: 'https://v1.hitokoto.cn?c=i', // enable hitokoto (一言) or not?
 
     // personal information
@@ -193,16 +190,7 @@ export default defineUserConfig<GungnirThemeOptions>({
       Powered by <a href="https://v2.vuepress.vuejs.org" target="_blank">VuePress</a> &
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
     `,
-  },
-
-  plugins: [
-    [
-      'sitemap2',
-      {
-        hostname: 'https://www.xuyx.site',
-      },
-    ],
-  ],
+  }),
 
   markdown: {
     extractHeaders: {
