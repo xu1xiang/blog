@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@vuepress/plugin-docsearch": "2.0.0-beta.45",
-    "vuepress-plugin-sitemap2": "^2.0.0-beta.47",
+    "vuepress-plugin-sitemap2": "2.0.0-beta.70",
     "vuepress-theme-gungnir": "2.0.0-alpha.23"
   },
   "dependencies": {

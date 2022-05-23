@@ -3,6 +3,7 @@ import { gungnirTheme } from 'vuepress-theme-gungnir'
 import { i18n } from 'vuepress-theme-gungnir'
 import { navbar, sidebar } from './configs'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
 
 const isProd = process.env.NODE_ENV === 'production'
 const base = process.env.BASE ? `/${process.env.BASE}/` : '/'
@@ -192,14 +193,11 @@ export default defineUserConfig({
     `,
   }),
 
-  // plugins: [
-  //   [
-  //     'sitemap2',
-  //     {
-  //       hostname: 'https://www.xuyx.site',
-  //     },
-  //   ],
-  // ],
+  plugins: [
+    sitemapPlugin({
+      hostname: 'https://www.xuyx.site',
+    }),
+  ],
 
   markdown: {
     extractHeaders: {
