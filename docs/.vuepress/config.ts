@@ -97,9 +97,9 @@ export default defineUserConfig({
 
     // personal information
     personalInfo: {
-      name: 'xuyixiang',
-      avatar: '/img/about-avatar.png',
-      description: "xuyixiang's blog",
+      name: 'Shaul Xu',
+      avatar: '/img/avatar.jpg',
+      description: "Shaul Xu's Blog",
       sns: {
         github: 'xu1xiang',
         email: 'xuyixiang18@gmail.com',
