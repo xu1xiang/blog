@@ -2,7 +2,6 @@
 layout: Post
 title: 如何使 a == 1 && a == 2 && a == 3 为 true
 # subtitle: A Test Post with a Header Image
-author: xuyixiang
 date: 2022-04-07
 useHeaderImage: true
 headerImage: /img/in-post/2022-04-07/cover.jpeg
