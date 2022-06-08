@@ -18,7 +18,7 @@ export default defineUserConfig({
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: `${base}/img/logo/logo.png`,
+        href: `${base}img/logo/logo.png`,
       },
     ],
     [
