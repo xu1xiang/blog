@@ -17,17 +17,8 @@ export default defineUserConfig({
       {
         rel: 'icon',
         type: 'image/png',
-        sizes: '16x16',
-        href: `${base}img/logo/favicon-16x16.png`,
-      },
-    ],
-    [
-      'link',
-      {
-        rel: 'icon',
-        type: 'image/png',
         sizes: '32x32',
-        href: `${base}/img/logo/favicon-32x32.png`,
+        href: `${base}/img/logo/logo.png`,
       },
     ],
     [
@@ -98,7 +89,7 @@ export default defineUserConfig({
     // personal information
     personalInfo: {
       name: 'xuyixiang',
-      avatar: '/img/avatar.jpg',
+      avatar: '/img/avatar.svg',
       description: "xuyixiang's blog",
       sns: {
         github: 'xu1xiang',
