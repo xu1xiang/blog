@@ -109,19 +109,19 @@ export default defineUserConfig({
     // header images on home page
     homeHeaderImages: [
       {
-        path: '/img/home-bg/1.jpg',
+        path: 'https://www.bing.com/th?id=OHR.GiffordPinchot_ZH-CN2050686223_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp',
         mask: 'rgba(40, 57, 101, .4)',
       },
       {
-        path: '/img/home-bg/2.jpg',
+        path: 'https://www.bing.com/th?id=OHR.BerninaBloodMoon_ZH-CN3349260043_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp',
         mask: 'rgb(251, 170, 152, .2)',
       },
       {
-        path: '/img/home-bg/3.jpg',
+        path: 'https://www.bing.com/th?id=OHR.SvalbardSun_ZH-CN6108396467_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp',
         mask: 'rgba(68, 74, 83, .1)',
       },
       {
-        path: '/img/home-bg/4.jpg',
+        path: 'https://www.bing.com/th?id=OHR.MountFryatt_ZH-CN0611142036_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp',
         mask: 'rgba(19, 75, 50, .2)',
       },
     ],
