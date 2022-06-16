@@ -82,7 +82,7 @@ export default defineUserConfig({
   bundler: viteBundler(),
 
   theme: gungnirTheme({
-    repo: 'Renovamen/vuepress-theme-gungnir',
+    repo: 'xu1xiang/blog',
     docsDir: 'docs',
     hitokoto: 'https://v1.hitokoto.cn?c=i', // enable hitokoto (一言) or not?
 
