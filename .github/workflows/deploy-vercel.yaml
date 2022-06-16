@@ -19,8 +19,19 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install dependencies && Build
-        run: yarn install && yarn build
+      - name: Cache dependencies
+        id: cache
+        uses: actions/cache@v3
+        with:
+          path: ./node_modules
+          key: modules-${{ hashFiles('yarn-lock') }}
+
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: yarn install
+
+      - name: Build
+        run: yarn build
 
       - name: Deploy
         uses: amondnet/vercel-action@v20 #deploy
