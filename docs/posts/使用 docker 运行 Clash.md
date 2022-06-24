@@ -46,8 +46,8 @@ mkdir ~/clash
 cp ./config.yaml ~/clash/ # config.yaml 是 Clash 的配置文件
 docker run --name clash \
     -p 5090:9090 -p 5890:7890 -p 5891:7891 \
-    -v ~/dk/config.yaml:/root/.config/clash/config.yaml \
-    -v ~/dk/ui:/ui -d dreamacro/clash
+    -v ~/clash/config.yaml:/root/.config/clash/config.yaml \
+    -v ~/clash/ui:/ui -d dreamacro/clash
 ```
 
 ::: warning
