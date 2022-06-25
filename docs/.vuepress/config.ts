@@ -74,8 +74,8 @@ export default defineUserConfig({
   locales: {
     '/': {
       lang: 'en-US',
-      title: "xuyixiang's blog",
-      description: "xuyixiang's blog",
+      title: "xuyixiang",
+      description: "xuyixiang's blog,许逸翔的博客",
     },
   },
 
