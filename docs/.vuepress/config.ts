@@ -90,7 +90,7 @@ export default defineUserConfig({
     personalInfo: {
       name: 'xuyixiang',
       avatar: '/img/avatar.svg',
-      description: 'Personal Site',
+      description: '🤧🥭',
       sns: {
         github: 'xu1xiang',
         email: 'xuyixiang18@gmail.com',
@@ -186,7 +186,7 @@ export default defineUserConfig({
     },
 
     footer: `
-      &copy; <a href="https://github.com/xu1xiang" target="_blank">xuyixiang</a> 2019-2022
+      &copy; <a href="https://github.com/xu1xiang" target="_blank">xuyixiang</a> 2019-present
       <br>
       Powered by <a href="https://v2.vuepress.vuejs.org" target="_blank">VuePress</a> &
       <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
